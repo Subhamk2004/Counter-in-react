@@ -29,8 +29,11 @@ function App() {
 
     let decrease_counter = () => {
         counter--;
+        if (counter < 0){
+            counter++;
+        }
         setCounter(counter);
-    }
+    };
 
     // by above we initialised a variable named counter, and a function named setCounter,
     // always name the methods or functions as if var is counter, then method is setCounter
