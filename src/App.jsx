@@ -20,6 +20,15 @@ function App() {
         // we could have also done as below:
         // setCounter(counter + 1);
 
+        // if you want to use more than one setcounter for adding more values, then we have to
+        // return the value as a callack to the setCounter as below :
+
+        // setCounter( (previousCounter) => {
+        //     previousCounter++;
+        // });
+
+        // so do this instead to add more values to the counter
+
         // the method of the useState will set the new value to the variable, and will
         // update it everywhere
 
